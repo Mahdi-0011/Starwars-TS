@@ -23,6 +23,10 @@
     "strictFunctionTypes": true,   
     "noImplicitReturns": true,
 
+    
+
+    
+
   },
   "include": ["src"]
 }

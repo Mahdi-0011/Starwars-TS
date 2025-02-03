@@ -1,0 +1,15 @@
+@import './variables.scss';
+
+// Grundläggande styling
+body {
+  background-color: $primary-bg;
+  background-image: url('../src/bilder/nadiia-ploshchenko-gGO-mu3vFL4-unsplash.jpg');
+  background-size: cover; // Gör så att bilden täcker hela skärmen
+  background-position: center; // Centrerar bilden
+  background-repeat: no-repeat; // Förhindrar att bilden upprepas
+  min-height: 100vh; // Se till att bilden täcker hela viewportens höjd
+
+  @media (max-width: 768px) {
+    background-position: top; // Flytta bilden till toppen för små skärmar
+  }
+}

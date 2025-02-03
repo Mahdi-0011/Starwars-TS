@@ -1,0 +1,84 @@
+@import './variables.scss';
+@import './mixin.scss';
+
+.header {
+  background-color: $header-bg;
+  color: $text-color;
+  padding: 20px;
+  text-align: center;
+  background-image: url('../src/bilder/75998.jpg');
+  background-size: cover; // bilden täcker hela headern
+  background-position: center; // bilden kommer ligga i center
+  background-repeat: no-repeat; // Förhindrar att bilden upprepas
+  min-height: 250px; // grundläggande höjd för desktop
+
+  @media (max-width: 768px) {
+    min-height: 150px; // Justera höjden för mobiler
+  }
+
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .search-container {
+    @include flex-center(10px);
+    flex-direction: row; /* Justera layout till horisontellt */
+    gap: 10px; /* Lägger till mellanrum mellan elementen */
+    width: 100%; /* Full bredd på desktop */
+    max-width: 600px; /* Maximal bredd */
+    margin: 0 auto; /* Centrerar containern på sidan */
+
+    @media (max-width: 768px) {
+      flex-direction: column; /* Justera layout till vertikalt på tablet */
+      width: 90%; /* Sätt bredd till 90% på mindre skärmar */
+    }
+
+    @media (max-width: 480px) {
+      flex-direction: column; /* Fortsätt med vertikal layout på mobiler */
+      width: 100%; /* Full bredd på mobiler */
+      gap: 5px; /* Minska mellanrummet på mobiler */
+    }
+  }
+
+  .search-input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    width: 300px; // bredd på desktop 
+    max-width: 100%; //Maximal bredd 
+    background-color: $search-bg;
+    color: $text-color;
+
+    @media (max-width: 768px) {
+      width: 80%; //bredd på tablet 
+    }
+
+    @media (max-width: 480px) {
+      width: 70%; // bredd på mobiler
+    }
+  }
+
+  .search-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: $search-btn-bg;
+    color: black;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $search-btn-hover;
+    }
+
+    @media (max-width: 768px) {
+      width: 40%; // bredd på tablet 
+    }
+
+    @media (max-width: 480px) {
+      width: 40%; // bredd på mobiler 
+    }
+  }
+}
