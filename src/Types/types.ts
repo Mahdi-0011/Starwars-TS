@@ -25,6 +25,6 @@ export interface SWAPIResult {
   species_name?: string;
 }
 
-export interface SWAPIResponse {
+  export interface SWAPIResponse {
   results: SWAPIResult[];
 }

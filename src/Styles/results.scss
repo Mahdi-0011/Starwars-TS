@@ -1,3 +1,6 @@
+@use "Abstracts/index" as *;
+
+
 .results-container {
   @include flex-center(20px);
   flex-wrap: wrap;

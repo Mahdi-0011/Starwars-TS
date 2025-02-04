@@ -7,7 +7,7 @@ Ett webbprojekt som använder SWAPI (Star Wars API) för att söka efter informa
 
 ###Installation och körning
 1. Klona ner projektet
-git clone https://github.com/ditt-repo/star-wars-info.git
+git clone https://github.com/Mahdi-0011/Starwars-TS.git
 terminal: cd star-wars-info
 
 2. Installera beroenden
@@ -15,23 +15,47 @@ terminal: npm install
 
 3. Starta projektet
 terminal: npm run dev
-Du kan köra projektet med cntrl+click på länken  http://localhost:3000/.
+Du kan köra projektet med cntrl+click på länken  http://localhost:5173/.
 
 ###Projektstruktur
 src
+API {fetchDataFromAPI}
 blider {
   headerbild
   backgrundbild
 }
-style {
+Components {
+  categorySelect.ts
+  creatheaderAndH1.ts
+  creatResultContainer.ts
+  creatSearchBtn.ts
+  creatSearchContainer.ts
+  creatSearchInput.ts
+}
+RenderData {
+  renderData.ts
+}
+SearchBtnEvenetListener {
+  SearchBtnEvenetListener.ts
+}
+styles {
+  Abstracts {
+    index.scss
+    mixin.scss
+    variables.scss
+  }
+
   base.scss
   header.scss
-  mixin.scss
   resluts.scss
-  variables.scss
+  index.scss
 }
+Types {
+  types.ts
+}
+
 main.ts
-style.ts
+style.scss
 index.html
 readme.md
 
