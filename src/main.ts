@@ -8,11 +8,11 @@ import { creatSearchContainer } from "./Components/creatSearchContainer";
 import { creatSearchInput } from "./Components/creatSearchInput";
 import { creatH1, CreatHeader } from "./Components/creatheaderAndH1";
 import { renderData } from "./RenderData/renderData";
-import { searchBtnAddEvenetListener } from "./SearchBtnEventListener/SearchBtnEventListener";
+import { searchBtnAddEventListener } from "./SearchBtnEventListener/SearchBtnEventListener";
 import "./style.scss";
 
 
-// Skapa en header och sökcontainer dynamiskt
+// Skapa en header och sökcontainer
 const body = document.body as HTMLElement;
 body.appendChild(CreatHeader());
 const header = document.querySelector(".header") as HTMLHeadElement;
@@ -24,13 +24,13 @@ searchContainer.appendChild(createCategorySelect());
 searchContainer.appendChild(CreatSearchBtn());
 
 // API 
-fetchDataFromAPI; 
+await fetchDataFromAPI(); 
 body.appendChild(creatResultsContainer());
 export const resultsContainer = document.querySelector(".results-container") as HTMLDivElement;
-renderData;
+renderData();
 
 
 //Sökknappen funktion 
-export const searhBtn = document.querySelector(".search-btn") as HTMLButtonElement;
-searchBtnAddEvenetListener();
+export const searchBtn = document.querySelector(".search-btn") as HTMLButtonElement;
+searchBtnAddEventListener();
 

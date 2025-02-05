@@ -1,11 +1,11 @@
 
 import { resultsContainer } from "../main";
-import { SWAPIResponse } from "../Types/types";
+import { SWAPIResponse} from "../Types/types";
 
 
 
 // Rendera data i DOM
-export const renderData = (data: SWAPIResponse): void => {
+export const renderData = (data: SWAPIResponse = {results: []}): void => {
   resultsContainer.innerHTML = "";
 
   // Gå igenom alla i resultatet

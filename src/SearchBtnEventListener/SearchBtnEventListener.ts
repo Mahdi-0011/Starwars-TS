@@ -1,16 +1,14 @@
 import { fetchDataFromAPI } from "../API/fetchDataFromApi";
-import { searhBtn } from "../main";
+import { searchBtn } from "../main";
 import { renderData } from "../RenderData/renderData";
 
 
 // Eventlistener för sökknappen
-  export const searchBtnAddEvenetListener = () => {searhBtn.addEventListener("click", async () => {
+  export const searchBtnAddEventListener = () => {searchBtn.addEventListener("click", async () => {
 
   const searchInput = document.querySelector(".search-input") as HTMLInputElement;
   const searchTerm: string = searchInput.value.trim();
-  const categorySelect = document.querySelector(
-    ".category-select"
-  ) as HTMLSelectElement;
+  const categorySelect = document.querySelector(".category-select") as HTMLSelectElement;
   const category: string = categorySelect.value;
 
   if (searchTerm) {

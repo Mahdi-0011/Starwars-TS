@@ -1,8 +1,9 @@
 
 import { SWAPIResponse } from "../Types/types";
 
+
  // Funktion för att hämta data
- export const fetchDataFromAPI = async (url: string): Promise<SWAPIResponse | null> => {
+ export const fetchDataFromAPI = async (url: string = "https://swapi.dev/api/"): Promise<SWAPIResponse | null> => {
   try {
     const response = await fetch(url);
     if (!response.ok) {
@@ -14,3 +15,4 @@ import { SWAPIResponse } from "../Types/types";
     return null;
   }
 };
+await fetchDataFromAPI();
