@@ -19,11 +19,11 @@ Du kan köra projektet med cntrl+click på länken  http://localhost:5173/.
 
 ###Projektstruktur
 src
-API {fetchDataFromAPI}
+API {fetchDataFromAPI},
 blider {
   headerbild
   backgrundbild
-}
+},
 Components {
   categorySelect.ts
   creatheaderAndH1.ts
@@ -31,28 +31,28 @@ Components {
   creatSearchBtn.ts
   creatSearchContainer.ts
   creatSearchInput.ts
-}
+},
 RenderData {
   renderData.ts
-}
+},
 SearchBtnEvenetListener {
   SearchBtnEvenetListener.ts
-}
+},
 styles {
   Abstracts {
     index.scss
     mixin.scss
     variables.scss
-  }
+  },
 
   base.scss
   header.scss
   resluts.scss
   index.scss
-}
+},
 Types {
   types.ts
-}
+},
 
 main.ts
 style.scss
