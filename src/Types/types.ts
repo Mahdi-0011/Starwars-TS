@@ -23,8 +23,8 @@ export interface SWAPIResult {
   average_height?: string;
   average_lifespan?: string;
   species_name?: string;
-}
+};
 
   export interface SWAPIResponse {
   results: SWAPIResult[];
-}
+};
