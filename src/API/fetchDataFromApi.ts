@@ -15,4 +15,4 @@ import { SWAPIResponse } from "../Types/types";
     return null;
   }
 };
-await fetchDataFromAPI();
+fetchDataFromAPI();

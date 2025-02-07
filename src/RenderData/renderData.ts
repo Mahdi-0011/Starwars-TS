@@ -78,3 +78,4 @@ export const renderData = (data: SWAPIResponse = {results: []}): void => {
     resultsContainer.appendChild(card);
   });
 };
+renderData();
