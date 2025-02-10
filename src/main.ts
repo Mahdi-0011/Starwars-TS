@@ -3,6 +3,7 @@
 import { fetchDataFromAPI } from "./API/fetchDataFromApi";
 import { createCategorySelect } from "./Components/categorySelect";
 import { creatResultsContainer } from "./Components/creatResultContainer";
+
 import { CreatSearchBtn } from "./Components/creatSearchBtn";
 import { creatSearchContainer } from "./Components/creatSearchContainer";
 import { creatSearchInput } from "./Components/creatSearchInput";

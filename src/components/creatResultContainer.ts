@@ -3,5 +3,6 @@ export const creatResultsContainer = () => {
   const resultsContainer = document.createElement("div") as HTMLDivElement;
   resultsContainer.id = "results";
   resultsContainer.classList.add("results-container");
+  
   return resultsContainer;
 };

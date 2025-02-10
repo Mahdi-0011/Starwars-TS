@@ -1,18 +1,20 @@
 
+
+
 import { resultsContainer } from "../main";
 import { SWAPIResponse} from "../Types/types";
 
 
-
 // Rendera data i DOM
 export const renderData = (data: SWAPIResponse = {results: []}): void => {
-  resultsContainer.innerHTML = "";
-
+  
+  /*resultsContainer.innerHTML = "";*/
+  
   // Gå igenom alla i resultatet
   data.results.forEach((item) => {
     const card = document.createElement("div") as HTMLDivElement;
     card.classList.add("cards");
-
+    
     // Filmer
     if (item.title) {
       card.innerHTML = `
